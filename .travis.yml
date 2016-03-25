@@ -1,0 +1,14 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.0.0
+sudo: false
+deploy:
+  edge: true
+  provider: chef-supermarket
+  user_id: criteo
+  cookbook_category: Other
+  client_key: .travis/client.pem
+  on:
+    tags: true
+    all_branches: true
