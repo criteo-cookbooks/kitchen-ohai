@@ -8,11 +8,13 @@ Overrides ohai attributes in your kitchen-tests. **This should not be used in a 
 Usage
 -----
 This cookbook allows you to override ohai attributes in a test-kitchen context:
+
 1. Include `kitchen-ohai` in your suite runlist.
 2. Declare the ohai values in the `kitchen_ohai.values` attributes in your suite.
 
 Here is an example of `.kitchen.yml` file overriding os and platform ohai with insane values:
-```yml
+
+```yaml
 ---
 driver:
   name: vagrant
@@ -35,7 +37,8 @@ suites:
 
 In some cases, you might want to include some attributes files _before_ overriding Ohai attributes.
 You just need to declare these attributes files as dependencies:
-```yml
+
+```yaml
 ---
 driver:
   name: vagrant
@@ -60,11 +63,13 @@ suites:
 Attributes
 ----------
 This cookbooks exposes 2 attributes:
+
 * `kitchen_ohai.dependencies` - List of attributes file that must be included before overriding ohai - default `[]`.
 * `kitchen_ohai.values` - Map of ohais attribute to override - default `{}`.
 
 Recipes
 -------
+
 ### kitchen-ohai::default
 Convenient recipe to allow you to include this cookbook in your kitchen runlist.
 
@@ -96,6 +101,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
 [annih]:                    https://github.com/Annih
 [repository]:               https://github.com/criteo-cookbooks/kitchen-ohai
 [build_status]:             https://api.travis-ci.org/criteo-cookbooks/kitchen-ohai.svg?branch=master
