@@ -1,7 +1,7 @@
 LineLength:
   Enabled: no
-Lint/EndAlignment:
-  AlignWith: variable
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
 MethodLength:
   Enabled: no
 Metrics/ClassLength:
@@ -10,10 +10,12 @@ Metrics/CyclomaticComplexity:
   Enabled: no
 Metrics/LineLength:
   Enabled: no
-Style/CaseIndentation:
-  IndentWhenRelativeTo: end
+Layout/CaseIndentation:
+  EnforcedStyle: end
   IndentOneStep: yes
-Style/TrailingCommaInArguments:
+Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: consistent_comma
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
